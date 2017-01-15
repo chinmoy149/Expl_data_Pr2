@@ -10,6 +10,6 @@ baltimore <- nei [nei$fips == "24510", ]
 sam <- aggregate (Emissions ~ year, baltimore, sum)
 
 # selected output device as a png file
-png ('plot1.png')
+png ('plot2.png')
 barplot (height = sam$Emissions, names.arg = sam$year, ylab = "Total Emissions of PM2.5 in Baltimore", xlab = "Year", main = "PLOT 2")
 dev.off()
